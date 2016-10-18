@@ -5,23 +5,45 @@ import org.springframework.data.annotation.Id;
 public class Donor {
 		@Id
 	    private String id;
-		private String name;
+		private String lastname;
+		private String firstname;
 	    private String title;
 	    private String email;
 	    private String country;
 		private String zipcode;
-		//donor either donates time for services or donation amount
-		private String services;
-		//should able to take list of days
-		private String availableDayOfWeek;
-		//should able to take list of times
-		private String availableTime;
+		private String phone;
+		private String password;
 		
-	    public String getName() {
-			return name;
+		public String getPhone() {
+			return phone;
 		}
-		public void setName(String name) {
-			this.name = name;
+		public void setPhone(String phone) {
+			this.phone = phone;
+		}
+		public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
+		}
+		//donor either donates time for services or donation amount
+		private String[] services;
+		//should able to take list of days
+		private String[] availableDayOfWeek;
+		//should able to take list of times
+				private String[] availableTimes;
+				
+		public String getLastname() {
+			return lastname;
+		}
+		public void setLastname(String lastname) {
+			this.lastname = lastname;
+		}
+		public String getFirstname() {
+			return firstname;
+		}
+		public void setFirstname(String firstname) {
+			this.firstname = firstname;
 		}
 		public String getTitle() {
 			return title;
@@ -47,39 +69,24 @@ public class Donor {
 		public void setZipcode(String zipcode) {
 			this.zipcode = zipcode;
 		}
-		public String getServices() {
+		public String[] getServices() {
 			return services;
 		}
-		public void setServices(String services) {
+		public void setServices(String[] services) {
 			this.services = services;
 		}
-		public String getAvailableDayOfWeek() {
+		public String[] getAvailableDayOfWeek() {
 			return availableDayOfWeek;
 		}
-		public void setAvailableDayOfWeek(String availableDayOfWeek) {
+		public void setAvailableDayOfWeek(String[] availableDayOfWeek) {
 			this.availableDayOfWeek = availableDayOfWeek;
 		}
-		public String getAvailableTime() {
-			return availableTime;
+		public String[] getAvailableTimes() {
+			return availableTimes;
 		}
-		public void setAvailableTime(String availableTime) {
-			this.availableTime = availableTime;
+		public void setAvailableTimes(String[] availableTimes) {
+			this.availableTimes = availableTimes;
 		}
-		public String getDonationDate() {
-			return donationDate;
-		}
-		public void setDonationDate(String donationDate) {
-			this.donationDate = donationDate;
-		}
-		public double getDonationAmount() {
-			return donationAmount;
-		}
-		public void setDonationAmount(double donationAmount) {
-			this.donationAmount = donationAmount;
-		}
-		private String donationDate;
-	    private double donationAmount;
-	    
-	  
-	
+		
+	   
 }
