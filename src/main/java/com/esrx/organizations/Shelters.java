@@ -1,12 +1,10 @@
 package com.esrx.organizations;
 
-import java.util.List;
-
 import org.springframework.data.annotation.Id;
 
-import com.esrx.services.ServiceTypes;
+import com.esrx.services.ShelterAmentities;
 
-public class Organizations {
+public class Shelters {
 	@Id
 	private String id;
 	
@@ -21,14 +19,18 @@ public class Organizations {
 	private String unavailable;
 	private String distance;
 	private String address;
-	private List<ServiceTypes> serviceTypes;
+	private ShelterAmentities shelterAmentities;
+	//bath, kitchen, transportaion, laundry
+
 	
 	
-	public List<ServiceTypes> getServiceTypes() {
-		return serviceTypes;
+	
+	
+	public ShelterAmentities getShelterAmentities() {
+		return shelterAmentities;
 	}
-	public void setServiceTypes(List<ServiceTypes> serviceTypes) {
-		this.serviceTypes = serviceTypes;
+	public void setShelterAmentities(ShelterAmentities shelterAmentities) {
+		this.shelterAmentities = shelterAmentities;
 	}
 	public void setUuid(String uuid) {
 		this.uuid = uuid;

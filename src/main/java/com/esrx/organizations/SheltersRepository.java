@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/rest")
 @CrossOrigin(origins = "http://localhost:9000")
 @RepositoryRestResource(collectionResourceRel="shelters", path="shelters")
-public interface OrganizationsRepository extends MongoRepository<Organizations, String> {
+public interface SheltersRepository extends MongoRepository<Shelters, String> {
 
-	List<Organizations> findByzipCode(@Param("zipCode") String zipCode);
+	List<Shelters> findByzipCode(@Param("zipCode") String zipCode);
+	List<Shelters> findByuuid(@Param("uuid") String uuid);
 	
 	
 }
