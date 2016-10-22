@@ -21,8 +21,18 @@ public class Organizations {
 	private String unavailable;
 	private String distance;
 	private String address;
-	//private List<ServiceTypes> serviceTypes;
+	private List<ServiceTypes> serviceTypes;
 	
+	
+	public List<ServiceTypes> getServiceTypes() {
+		return serviceTypes;
+	}
+	public void setServiceTypes(List<ServiceTypes> serviceTypes) {
+		this.serviceTypes = serviceTypes;
+	}
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 	public String getId() {
 		return id;
 	}
