@@ -15,8 +15,14 @@ public class ShelterAmentities implements Serializable{
 	private boolean hasKitchen;
 	private boolean hasTransportation;
 	private boolean hasBath;
-	private boolean hasyLaundry;
+	private boolean hasLaundry;
 	
+	public boolean isHasLaundry() {
+		return hasLaundry;
+	}
+	public void setHasLaundry(boolean hasLaundry) {
+		this.hasLaundry = hasLaundry;
+	}
 	public String getServiceId() {
 		return serviceId;
 	}
@@ -41,12 +47,7 @@ public class ShelterAmentities implements Serializable{
 	public void setHasBath(boolean hasBath) {
 		this.hasBath = hasBath;
 	}
-	public boolean isHasyLaundry() {
-		return hasyLaundry;
-	}
-	public void setHasyLaundry(boolean hasyLaundry) {
-		this.hasyLaundry = hasyLaundry;
-	}
+	
 
 	
    
