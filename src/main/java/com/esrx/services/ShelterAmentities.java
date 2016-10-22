@@ -10,7 +10,7 @@ public class ShelterAmentities implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-    private String serviceId;
+    private String id;
 
 	private boolean hasKitchen;
 	private boolean hasTransportation;
@@ -23,12 +23,8 @@ public class ShelterAmentities implements Serializable{
 	public void setHasLaundry(boolean hasLaundry) {
 		this.hasLaundry = hasLaundry;
 	}
-	public String getServiceId() {
-		return serviceId;
-	}
-	public void setServiceId(String serviceId) {
-		this.serviceId = serviceId;
-	}
+	
+	
 	public boolean isHasKitchen() {
 		return hasKitchen;
 	}
