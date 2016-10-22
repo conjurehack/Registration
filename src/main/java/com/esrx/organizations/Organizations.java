@@ -1,18 +1,41 @@
 package com.esrx.organizations;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
+
+import com.esrx.services.ServiceTypes;
 
 public class Organizations {
 	@Id
 	private String id;
-
-	//private String uuid;
+	
+	private String uuid;
+	public String getUuid() {
+		return id;
+	}
 	private String shelterName;
 	private String zipCode;
 	private String totalBeds;
 	private String available;
 	private String unavailable;
 	private String distance;
+	private String address;
+	//private List<ServiceTypes> serviceTypes;
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
 	public String getShelterName() {
 		return shelterName;
 	}
