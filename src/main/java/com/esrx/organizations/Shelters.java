@@ -1,5 +1,7 @@
 package com.esrx.organizations;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 
 import com.esrx.services.ShelterAmentities;
@@ -14,18 +16,29 @@ public class Shelters {
 	}
 	private String shelterName;
 	private String zipCode;
+	
 	private String totalBeds;
 	private String available;
 	private String unavailable;
+	
 	private String distance;
 	private String address;
 	private ShelterAmentities shelterAmentities;
 	//bath, kitchen, transportaion, laundry
 
+	private List<Cells> cells;
 	
 	
 	
 	
+	
+	
+	public List<Cells> getCells() {
+		return cells;
+	}
+	public void setCells(List<Cells> cells) {
+		this.cells = cells;
+	}
 	public ShelterAmentities getShelterAmentities() {
 		return shelterAmentities;
 	}

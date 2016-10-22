@@ -6,7 +6,10 @@ public class Client {
 	@Id
 	private String id;
 
-	//private String uuid;
+	private String uuid;
+	public String getUuid() {
+		return id;
+	}
 	private String ssn;
 	private String dob;
 	private String race;
