@@ -10,8 +10,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface ClientRepository extends MongoRepository<Client, String> {
 
 	List<Client> findBylastName(@Param("name") String name);
-	List<Client> findByssn(@Param("ssn") String ssn);
-	List<Client> findByentryDate(@Param("entryDate") String entryDate);
-	List<Client> findByexitDate(@Param("exitDate") String exitDate);
+	
 	
 }
