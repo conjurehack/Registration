@@ -6,6 +6,28 @@ public class Cells {
 	
 	@Id
 	private String id;
+
+	public String getId() {
+		return id;
+	}
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+	private String clientId;
+	private String shelterId;
+
+	
+	//todo
+	private String date;
+	
+	
+	private boolean reserved;
+	
+	
 	
 	public String getDate() {
 		return date;
@@ -15,21 +37,6 @@ public class Cells {
 	public void setDate(String date) {
 		this.date = date;
 	}
-
-
-	
-
-	private String clientId;
-	private String shelterId;
-	
-	private String date;
-	
-	
-	private boolean reserved;
-
-
-	
-
 
 	public String getClientId() {
 		return clientId;

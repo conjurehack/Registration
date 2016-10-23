@@ -14,7 +14,7 @@ public class Shelters {
 	public String getUuid() {
 		return id;
 	}
-	private String shelterName;
+	private String shelterId;
 	private String zipCode;
 	
 	private String totalBeds;
@@ -61,11 +61,11 @@ public class Shelters {
 		this.address = address;
 	}
 	
-	public String getShelterName() {
-		return shelterName;
+	public String getShelterId() {
+		return shelterId;
 	}
-	public void setShelterName(String shelterName) {
-		this.shelterName = shelterName;
+	public void setShelterName(String shelterId) {
+		this.shelterId = shelterId;
 	}
 	public String getZipCode() {
 		return zipCode;
