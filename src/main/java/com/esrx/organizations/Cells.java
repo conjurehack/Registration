@@ -23,12 +23,23 @@ public class Cells {
 	
 	//todo
 	private String date;
+	private String cellId;
 	
 	
 	private boolean reserved;
 	
 	
 	
+	public String getCellId() {
+		return cellId;
+	}
+
+
+	public void setCellId(String cellId) {
+		this.cellId = cellId;
+	}
+
+
 	public String getDate() {
 		return date;
 	}

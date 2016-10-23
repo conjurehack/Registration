@@ -17,14 +17,13 @@ public class Shelters {
 	private String shelterId;
 	private String zipCode;
 	
-	private String totalBeds;
-	private String available;
-	private String unavailable;
+	private int totalBeds;
+	private int available;
+	private int unavailable;
 	
 	private String distance;
 	private String address;
 	private ShelterAmentities shelterAmentities;
-	//bath, kitchen, transportaion, laundry
 
 	private List<Cells> cells;
 	
@@ -73,22 +72,22 @@ public class Shelters {
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
 	}
-	public String getTotalBeds() {
+	public int getTotalBeds() {
 		return totalBeds;
 	}
-	public void setTotalBeds(String totalBeds) {
+	public void setTotalBeds(int totalBeds) {
 		this.totalBeds = totalBeds;
 	}
-	public String getAvailable() {
+	public int getAvailable() {
 		return available;
 	}
-	public void setAvailable(String available) {
+	public void setAvailable(int available) {
 		this.available = available;
 	}
-	public String getUnavailable() {
+	public int getUnavailable() {
 		return unavailable;
 	}
-	public void setUnavailable(String unavailable) {
+	public void setUnavailable(int unavailable) {
 		this.unavailable = unavailable;
 	}
 	public String getDistance() {
