@@ -16,6 +16,9 @@ public class Shelters {
 	}
 	//private String shelterId;
 	private String shelterName;
+	public void setShelterName(String shelterName) {
+		this.shelterName = shelterName;
+	}
 	public String getShelterName() {
 		return shelterName;
 	}
